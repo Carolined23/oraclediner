@@ -1,0 +1,255 @@
+/**************************************************************** 
+
+Styling and Sizing for elements. Do not modify this section
+
+*****************************************************************/
+
+* {
+    box-sizing: border-box;
+}
+
+/***********************    body structure   ********************/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+
+
+/*********************    nav bar structure   *******************/
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    position: relative;
+    right: -100px;
+}
+
+.navbar img {
+    margin: 5px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+/******************    nav children structure   *****************/
+
+nav img {
+    align-self: center;
+}
+
+nav ul {
+    display:flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+/********************    container structure   ******************/
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.container * {
+    margin: 10px;
+}
+
+/*********************    sidebar structure   *******************/
+
+.bio-sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: fit-content;
+}
+
+.bio-sidebar * {
+    margin: 4px;
+}
+
+
+/***********************    bio structure   *********************/
+
+.bio{
+    display: flex;
+    flex-direction: column;
+}
+
+.bio img {
+    width: clamp(200px, 70%, 200px);
+    height: 250px;
+    margin: 10px;
+}
+
+/*********************    aboutme structure   *******************/
+
+.about-me .about-me-text *{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/**********************    main structure   *********************/
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    margin: 10px;
+    max-width: 1000px;
+
+}
+
+.main-section section {
+    width: 90%;
+    padding: 10px;
+}
+.main-section .posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-section .posts div {
+    align-self: center;
+    margin: 20px;
+}
+/*****************************************************************
+
+Your Playground (Make customizations and changes below)
+
+*****************************************************************/
+
+/************************    navbar   ***************************/
+
+nav {
+       background-color: transparent;
+       border-bottom: 2px solid #0075fb  ;
+}
+
+nav img {
+    border: #000000 dotted 2px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1c6bff;
+    font-weight: bold;
+    font-family: Arial, sans-serif; /
+}
+
+/**********************    text styles   ************************/
+
+ul li {
+    list-style-type: none;
+    padding: 14px 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #1c6bff;
+    font-weight: bold;
+}
+
+/***********************    sidebar styles   ********************/
+
+.bio-sidebar {
+    color: #1c6bff;
+    border: #1c6bff; dotted 2px;
+}
+
+.bio-sidebar .bio,
+.bio-sidebar .links{
+   
+}
+
+/***********************   homepage styles   ***********************/
+body.index {
+    background-color:rgb(220, 212, 255);
+}
+.main-section section {
+    border: #1c6bff solid 2px; 
+    padding: 40px;
+}
+
+.main-section .posts div {
+    border: #1c6bff solid 2px;
+    padding: 40px;
+}
+
+.main-section h1,
+.main-section h2 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size: 90px;
+    color: rgb(76, 0, 240)
+    
+}
+
+/************************    bio styles   ***********************/
+
+.bio img {
+    border:#1c6bff solid 2px;
+}
+
+/**********************    aboutme styles   *********************/
+.about-me .about-me-text *{
+    border:#333333 solid 2px;
+}
+
+
+
+    /** Blog */
+
+body.blog-section {
+    background-color: #16d82a;
+}
+    
+   .blog-section { font-family:cursive;}
+   .blog-section h2{font-weight:100;}
+
+  /* Blog section general styles */
+.blog-section {
+    border: 0cf82f solid 2px; 
+}
+
+
+/* Post container styling */
+.blog-section .posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 10px 25px;
+    margin: 10px auto;
+    font-family:monospace;/* Default font for body text */
+}
+
+/* Individual post divs */
+.blog-section .posts div {
+    border: #1c6bff solid 2px;
+    align-self: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+/* Headers inside posts */
+.blog-section .posts h2,
+.blog-section .posts h3 {
+    font-family:cursive; /* Different font for headers */
+    margin-bottom: 10px;
+}
+
+
+ 
